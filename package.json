@@ -1,0 +1,32 @@
+{
+  "name": "fooddelivery",
+  "version": "1.0.0",
+  "engines": {
+    "node": "10.16.0"
+  },
+  "type": "module",
+  "description": "Food Delivery APP with ReactJs & NodeJs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "supervisor backend/server.js",
+    "client": "npm start --prefix frontend",
+    "start": "node backend/server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MohamedEssaadani/Food-Delivery-App"
+  },
+  "author": "ES-SAADANI Mohamed",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^5.11.13",
+    "supervisor": "^0.12.0"
+  }
+}
